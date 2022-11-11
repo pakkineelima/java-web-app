@@ -1,4 +1,5 @@
 pipeline {
+  agent { label 'ec2' }
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
